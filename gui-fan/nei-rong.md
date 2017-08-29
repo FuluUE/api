@@ -37,6 +37,7 @@
 
 ```js
 axios({
+    url: '/v1/',
     method: 'GET',
     ...
 })
@@ -61,10 +62,22 @@ service-api.com/app-setups
 属性也使用小写字母，但是属性名要用 \_（下划线）分割，以便在 JavaScript 中省略引号。例如：
 
 ```js
-service_class: "first"
+{
+    service_class: "first"
+}
 ```
 
-> 在请求的 body 体使用 JSON 数据格式
+针对 C\# 项目，属性的命名规范，可采用另一种形式：
+
+```js
+{
+    ServiceClass: "first"
+}
+```
+
+**注意**：同一个项目，属性的命名规范，只能采用一种。
+
+> 请求的 body 体使用 JSON 数据格式
 
 在做提交数据操作的时候，提交的数据格式为 JSON 字符串。
 

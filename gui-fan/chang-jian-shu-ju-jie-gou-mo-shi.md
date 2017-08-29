@@ -1,5 +1,16 @@
 ## 范例参考
 
+> 基本的接口返回格式
+
+```js
+{
+    "data": {},        // 数据内容
+    "status": 200,     // 接口状态码
+    "code": "001",       // 业务返回码
+    "message": ""      // 消息文本（有业务返回码时，此字段可不显示）
+}
+```
+
 > 各种状态下，返回带分页的列表数据结构
 
 状态一：无数据
@@ -14,6 +25,7 @@
         "page_size": 10    // 每页条数
     },
     "status": 200,
+    "code": "001",
     "message": ""
 }
 ```
@@ -32,6 +44,7 @@
         "page_size": 10
     },
     "status": 200,
+    "code": "001",
     "message": ""
 }
 ```
@@ -53,6 +66,7 @@
         "page_size": 10
     },
     "status": 200,
+    "code": "001",
     "message": ""
 }
 ```
@@ -64,12 +78,13 @@
 ```js
 {
     "data": {
-        "list": [],
-        "statistics": {
-            "total_price": 0
-        }
+        "list": []
+    },
+    "statistics": {
+        "total_price": 0
     },
     "status": 200,
+    "code": "001",
     "message": ""
 }
 ```
@@ -85,12 +100,14 @@
         },{
             "id": "df7cca36-3d7a-40f4-8f06-ae03cc22f045",
             ...    
-        }],
-        "statistics": {
-           "total_price": 2
-        }    
+        }]
+
+    },
+    "statistics": {
+       "total_price": 2
     },
     "status": 200,
+    "code": "001",
     "message": ""
 }
 ```
@@ -104,6 +121,7 @@
         ... 
     },
     "status": 200,
+    "code": "001",
     "message": ""
 }
 ```
