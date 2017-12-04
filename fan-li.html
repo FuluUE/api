@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="faq.html" />
+    <link rel="next" href="qanda.html" />
     
     
-    <link rel="prev" href="gui-fan.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -87,8 +87,6 @@
 
     
         
-        <li class="header">前后端交互规范</li>
-        
         
     
         <li class="chapter " data-level="1.1" data-path="./">
@@ -96,7 +94,7 @@
                 <a href="./">
             
                     
-                    缘由
+                    前后端交互规范
             
                 </a>
             
@@ -104,33 +102,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="geng-xin-ri-zhi.html">
-            
-                <a href="geng-xin-ri-zhi.html">
-            
-                    
-                    更新日志
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.3" data-path="gui-fan.html">
-            
-                <a href="gui-fan.html">
-            
-                    
-                    规范
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter active" data-level="1.4" data-path="fan-li.html">
+        <li class="chapter active" data-level="1.2" data-path="fan-li.html">
             
                 <a href="fan-li.html">
             
@@ -143,12 +115,38 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="faq.html">
+        <li class="chapter " data-level="1.3" data-path="qanda.html">
             
-                <a href="faq.html">
+                <a href="qanda.html">
             
                     
-                    FAQ
+                    Q&A
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="geng-xin-ri-zhi.html">
+            
+                <a href="geng-xin-ri-zhi.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="yuan-you.html">
+            
+                <a href="yuan-you.html">
+            
+                    
+                    缘由
             
                 </a>
             
@@ -227,108 +225,123 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="&#x8303;&#x4F8B;&#x53C2;&#x8003;">&#x8303;&#x4F8B;&#x53C2;&#x8003;</h2>
-<p><strong>1&#x3001;&#x57FA;&#x672C;&#x7684;&#x63A5;&#x53E3;&#x8FD4;&#x56DE;&#x683C;&#x5F0F;</strong></p>
+                                <h2 id="&#x8303;&#x4F8B;">&#x8303;&#x4F8B;</h2>
+<p><strong>1&#x3001;&#x57FA;&#x672C;&#x7684;&#x8FD4;&#x56DE;&#x683C;&#x5F0F;&#xFF08;&#x5FC5;&#x8981;&#x5B57;&#x6BB5;&#x53CA;&#x8BF4;&#x660E;&#xFF09;</strong></p>
 <pre><code class="lang-js">{
+    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,        <span class="hljs-comment">// &#x4E1A;&#x52A1;&#x8FD4;&#x56DE;&#x7801;</span>
     <span class="hljs-string">&quot;data&quot;</span>: {},        <span class="hljs-comment">// &#x6570;&#x636E;&#x5185;&#x5BB9;</span>
-    <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-number">200</span>,     <span class="hljs-comment">// &#x63A5;&#x53E3;&#x72B6;&#x6001;&#x7801;</span>
-    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-string">&quot;001&quot;</span>,       <span class="hljs-comment">// &#x4E1A;&#x52A1;&#x8FD4;&#x56DE;&#x7801;</span>
-    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;&quot;</span>      <span class="hljs-comment">// &#x6D88;&#x606F;&#x6587;&#x672C;&#xFF08;&#x6709;&#x4E1A;&#x52A1;&#x8FD4;&#x56DE;&#x7801;&#x65F6;&#xFF0C;&#x6B64;&#x5B57;&#x6BB5;&#x53EF;&#x4E0D;&#x663E;&#x793A;&#xFF09;</span>
+    <span class="hljs-string">&quot;message_type&quot;</span>: <span class="hljs-string">&quot;&quot;</span>, <span class="hljs-comment">// &#x6D88;&#x606F;&#x6587;&#x672C;&#x7C7B;&#x578B;&#xFF0C;&#x53EF;&#x9009;&#x503C;&#xFF1A;none&#xFF08;&#x65E0;&#x6D88;&#x606F;&#x5185;&#x5BB9;&#xFF09;&#xFF1B;info&#xFF08;&#x6B63;&#x5E38;&#xFF09;&#x3001;warn&#xFF08;&#x8B66;&#x544A;&#xFF09;&#x3001;error&#xFF08;&#x9519;&#x8BEF;&#xFF09;&#x3001;success&#xFF08;&#x6210;&#x529F;&#xFF09;</span>
+    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;&quot;</span>      <span class="hljs-comment">// &#x6D88;&#x606F;&#x6587;&#x672C;&#x5185;&#x5BB9;</span>
 }
 </code></pre>
-<p><strong>2&#x3001;&#x5404;&#x79CD;&#x72B6;&#x6001;&#x4E0B;&#xFF0C;&#x8FD4;&#x56DE;&#x5E26;&#x5206;&#x9875;&#x7684;&#x5217;&#x8868;&#x6570;&#x636E;&#x7ED3;&#x6784;</strong></p>
+<p>C# &#x9879;&#x76EE;&#x4E5F;&#x53EF;&#x91C7;&#x7528;&#x5927;&#x9A7C;&#x5CF0;&#x5199;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-js">{
+    <span class="hljs-string">&quot;Code&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+    <span class="hljs-string">&quot;Data&quot;</span>: {},
+    <span class="hljs-string">&quot;MessageType&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+    <span class="hljs-string">&quot;Message&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+}
+</code></pre>
+<p><strong>2&#x3001;&#x8FD4;&#x56DE;&#x5355;&#x6761;&#x6570;&#x636E;&#x7ED3;&#x6784;</strong></p>
+<pre><code class="lang-js">{
+    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-string">&quot;1001010&quot;</span>,
+    <span class="hljs-string">&quot;data&quot;</span>: {
+        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;985123a0-7e4f-11e7-9022-fb7190c856e4&quot;</span>,
+        ...
+    },
+    <span class="hljs-string">&quot;message_type&quot;</span>: <span class="hljs-string">&quot;info&quot;</span>,
+    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;&#x54C8;&#x54C8;&#x54C8;&quot;</span>
+}
+</code></pre>
+<p><strong>3&#x3001;&#x8FD4;&#x56DE;&#x5E26;&#x5206;&#x9875;&#x7684;&#x5217;&#x8868;&#x6570;&#x636E;&#x7ED3;&#x6784;</strong></p>
 <p>&#x72B6;&#x6001;&#x4E00;&#xFF1A;&#x65E0;&#x6570;&#x636E;</p>
-<pre><code class="lang-js"><span class="hljs-comment">//  /api/user-list</span>
-{
+<pre><code class="lang-js">{
+    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-string">&quot;1001010&quot;</span>,
     <span class="hljs-string">&quot;data&quot;</span>: {
         <span class="hljs-string">&quot;list&quot;</span>: [],
         <span class="hljs-string">&quot;total&quot;</span>: <span class="hljs-number">0</span>,        <span class="hljs-comment">// &#x6570;&#x636E;&#x603B;&#xFF08;&#x6761;&#xFF09;&#x6570;</span>
         <span class="hljs-string">&quot;current&quot;</span>: <span class="hljs-number">1</span>,      <span class="hljs-comment">// &#x5F53;&#x524D;&#x9875;&#x6570;</span>
         <span class="hljs-string">&quot;page_size&quot;</span>: <span class="hljs-number">10</span>    <span class="hljs-comment">// &#x6BCF;&#x9875;&#x6761;&#x6570;</span>
     },
-    <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-number">200</span>,
-    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-string">&quot;001&quot;</span>,
-    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+    <span class="hljs-string">&quot;statistics&quot;</span>: {
+        <span class="hljs-string">&quot;total&quot;</span>: <span class="hljs-number">0</span>
+    },
+    <span class="hljs-string">&quot;message_type&quot;</span>: <span class="hljs-string">&quot;info&quot;</span>,
+    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;&#x54C8;&#x54C8;&#x54C8;&quot;</span>
 }
 </code></pre>
 <p>&#x72B6;&#x6001;&#x4E8C;&#xFF1A;&#x6709;&#x4E00;&#x6761;&#x6570;&#x636E;</p>
 <pre><code class="lang-js">{
+    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-string">&quot;1001010&quot;</span>,
     <span class="hljs-string">&quot;data&quot;</span>: {
         <span class="hljs-string">&quot;list&quot;</span>: [{
             <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;985123a0-7e4f-11e7-9022-fb7190c856e4&quot;</span>,
             ...
         }],
-        <span class="hljs-string">&quot;total&quot;</span>: <span class="hljs-number">1</span>,
+        <span class="hljs-string">&quot;total&quot;</span>: <span class="hljs-number">0</span>,
         <span class="hljs-string">&quot;current&quot;</span>: <span class="hljs-number">1</span>,
         <span class="hljs-string">&quot;page_size&quot;</span>: <span class="hljs-number">10</span>
     },
-    <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-number">200</span>,
-    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-string">&quot;001&quot;</span>,
-    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+    <span class="hljs-string">&quot;statistics&quot;</span>: {
+        <span class="hljs-string">&quot;total&quot;</span>: <span class="hljs-number">0</span>
+    },
+    <span class="hljs-string">&quot;message_type&quot;</span>: <span class="hljs-string">&quot;info&quot;</span>,
+    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;&#x54C8;&#x54C8;&#x54C8;&quot;</span>
 }
 </code></pre>
 <p>&#x72B6;&#x6001;&#x4E09;&#xFF1A;&#x6709;&#x591A;&#x6761;&#x6570;&#x636E;</p>
 <pre><code class="lang-js">{
+    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-string">&quot;1001010&quot;</span>,
     <span class="hljs-string">&quot;data&quot;</span>: {
         <span class="hljs-string">&quot;list&quot;</span>: [{
             <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;985123a0-7e4f-11e7-9022-fb7190c856e4&quot;</span>,
             ...
-        },{
+        }, {
             <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;df7cca36-3d7a-40f4-8f06-ae03cc22f045&quot;</span>,
-            ...    
+            ...
         }],
-        <span class="hljs-string">&quot;total&quot;</span>: <span class="hljs-number">20</span>,
-        <span class="hljs-string">&quot;current&quot;</span>: <span class="hljs-number">2</span>,
+        <span class="hljs-string">&quot;total&quot;</span>: <span class="hljs-number">0</span>,
+        <span class="hljs-string">&quot;current&quot;</span>: <span class="hljs-number">1</span>,
         <span class="hljs-string">&quot;page_size&quot;</span>: <span class="hljs-number">10</span>
     },
-    <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-number">200</span>,
-    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-string">&quot;001&quot;</span>,
-    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+    <span class="hljs-string">&quot;statistics&quot;</span>: {
+        <span class="hljs-string">&quot;total&quot;</span>: <span class="hljs-number">0</span>
+    },
+    <span class="hljs-string">&quot;message_type&quot;</span>: <span class="hljs-string">&quot;info&quot;</span>,
+    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;&#x54C8;&#x54C8;&#x54C8;&quot;</span>
 }
 </code></pre>
-<p><strong>3&#x3001;&#x8FD4;&#x56DE;&#x5E26;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x7684;&#x5217;&#x8868;&#x6570;&#x636E;&#x7ED3;&#x6784;</strong></p>
-<p>&#x72B6;&#x6001;&#x4E00;&#xFF1A;&#x65E0;&#x6570;&#x636E;&#xFF0C;&#x65E0;&#x7EDF;&#x8BA1;</p>
+<p><strong>4&#x3001;&#x8FD4;&#x56DE;&#x5E26;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x7684;&#x5217;&#x8868;&#x6570;&#x636E;&#x7ED3;&#x6784;</strong></p>
+<p>&#x72B6;&#x6001;&#x4E00;&#xFF1A;&#x65E0;&#x6570;&#x636E;</p>
 <pre><code class="lang-js">{
+    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-string">&quot;1001010&quot;</span>,
     <span class="hljs-string">&quot;data&quot;</span>: {
         <span class="hljs-string">&quot;list&quot;</span>: []
     },
     <span class="hljs-string">&quot;statistics&quot;</span>: {
-        <span class="hljs-string">&quot;total_price&quot;</span>: <span class="hljs-number">0</span>
+        <span class="hljs-string">&quot;total&quot;</span>: <span class="hljs-number">0</span>
     },
-    <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-number">200</span>,
-    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-string">&quot;001&quot;</span>,
-    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+    <span class="hljs-string">&quot;message_type&quot;</span>: <span class="hljs-string">&quot;info&quot;</span>,
+    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;&#x54C8;&#x54C8;&#x54C8;&quot;</span>
 }
 </code></pre>
-<p>&#x72B6;&#x6001;&#x4E8C;&#xFF1A;&#x6709;&#x6570;&#x636E;&#xFF0C;&#x6709;&#x7EDF;&#x8BA1;</p>
+<p>&#x72B6;&#x6001;&#x4E8C;&#xFF1A;&#x6709;&#x6570;&#x636E;&#xFF0C;&#x6709;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;</p>
 <pre><code class="lang-js">{
+    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-string">&quot;1001010&quot;</span>,
     <span class="hljs-string">&quot;data&quot;</span>: {
         <span class="hljs-string">&quot;list&quot;</span>: [{
             <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;985123a0-7e4f-11e7-9022-fb7190c856e4&quot;</span>,
             ...
-        },{
+        }, {
             <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;df7cca36-3d7a-40f4-8f06-ae03cc22f045&quot;</span>,
-            ...    
+            ...
         }]
-
     },
     <span class="hljs-string">&quot;statistics&quot;</span>: {
-       <span class="hljs-string">&quot;total_price&quot;</span>: <span class="hljs-number">2</span>
+        <span class="hljs-string">&quot;total&quot;</span>: <span class="hljs-number">2</span>
     },
-    <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-number">200</span>,
-    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-string">&quot;001&quot;</span>,
-    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
-}
-</code></pre>
-<p><strong>4&#x3001;&#x8FD4;&#x56DE;&#x5355;&#x4E2A;&#x6570;&#x636E;&#x7ED3;&#x6784;</strong></p>
-<pre><code class="lang-js">{
-    <span class="hljs-string">&quot;data&quot;</span>: {
-        <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;985123a0-7e4f-11e7-9022-fb7190c856e4&quot;</span>,
-        ... 
-    },
-    <span class="hljs-string">&quot;status&quot;</span>: <span class="hljs-number">200</span>,
-    <span class="hljs-string">&quot;code&quot;</span>: <span class="hljs-string">&quot;001&quot;</span>,
-    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;&quot;</span>
+    <span class="hljs-string">&quot;message_type&quot;</span>: <span class="hljs-string">&quot;info&quot;</span>,
+    <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;&#x54C8;&#x54C8;&#x54C8;&quot;</span>
 }
 </code></pre>
 
@@ -358,12 +371,12 @@
 
             
                 
-                <a href="gui-fan.html" class="navigation navigation-prev " aria-label="Previous page: 规范">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 前后端交互规范">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="faq.html" class="navigation navigation-next " aria-label="Next page: FAQ">
+                <a href="qanda.html" class="navigation navigation-next " aria-label="Next page: Q&A">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -374,7 +387,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"范例","level":"1.4","depth":1,"next":{"title":"FAQ","level":"1.5","depth":1,"path":"faq.md","ref":"faq.md","articles":[]},"previous":{"title":"规范","level":"1.3","depth":1,"path":"gui-fan.md","ref":"gui-fan.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"fan-li.md","mtime":"2017-09-14T09:53:39.006Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-09-14T09:57:51.008Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"范例","level":"1.2","depth":1,"next":{"title":"Q&A","level":"1.3","depth":1,"path":"qanda.md","ref":"qanda.md","articles":[]},"previous":{"title":"前后端交互规范","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"fan-li.md","mtime":"2017-12-04T07:42:38.200Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-04T08:15:32.132Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
