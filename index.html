@@ -273,12 +273,12 @@ service-api.com/app-setups
 </code></pre>
 <p>&#x5C5E;&#x6027;&#x4E5F;&#x4F7F;&#x7528;&#x5C0F;&#x5199;&#x5B57;&#x6BCD;&#xFF0C;&#x4F46;&#x662F;&#x5C5E;&#x6027;&#x540D;&#x8981;&#x7528; _&#xFF08;&#x4E0B;&#x5212;&#x7EBF;&#xFF09;&#x5206;&#x5272;&#xFF0C;&#x4EE5;&#x4FBF;&#x5728; JavaScript &#x4E2D;&#x7701;&#x7565;&#x5F15;&#x53F7;&#x3002;&#x4F8B;&#x5982;&#xFF1A;</p>
 <pre><code class="lang-js">{
-    service_class: <span class="hljs-string">&quot;first&quot;</span>
+    <span class="hljs-string">&quot;service_class&quot;</span>: <span class="hljs-string">&quot;first&quot;</span>
 }
 </code></pre>
-<p>&#x9488;&#x5BF9; C# &#x9879;&#x76EE;&#xFF0C;&#x5C5E;&#x6027;&#x7684;&#x547D;&#x540D;&#x89C4;&#x8303;&#xFF0C;&#x53EF;&#x91C7;&#x7528;&#x5927;&#x9A7C;&#x5CF0;&#x5F62;&#x5F0F;&#xFF1A;</p>
+<p>&#x9488;&#x5BF9; C# &#x9879;&#x76EE;&#xFF0C;&#x5C5E;&#x6027;&#x7684;&#x547D;&#x540D;&#x89C4;&#x8303;&#xFF0C;&#x53EF;&#x91C7;&#x7528;&#x5927;&#x9A7C;&#x5CF0;&#x5F62;&#x5F0F;&#xFF08;&#x5982;&#x679C;&#x53EF;&#x80FD;&#xFF0C;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x4E0A;&#x9762;&#x7684;&#x65B9;&#x5F0F;&#xFF09;&#xFF1A;</p>
 <pre><code class="lang-js">{
-    ServiceClass: <span class="hljs-string">&quot;first&quot;</span>
+    <span class="hljs-string">&quot;ServiceClass&quot;</span>: <span class="hljs-string">&quot;first&quot;</span>
 }
 </code></pre>
 <blockquote>
@@ -336,7 +336,9 @@ axios({
 </code></pre>
 <p><strong>5&#x3001;&#x4F7F;&#x7528; UTC&#xFF08;&#x4E16;&#x754C;&#x6807;&#x51C6;&#x65F6;&#x95F4;&#xFF09;&#x65F6;&#x95F4;&#xFF0C;&#x7528; ISO8601 &#x8FDB;&#x884C;&#x683C;&#x5F0F;&#x5316;</strong></p>
 <p>&#x4EC5;&#x63A5;&#x53D7;&#x548C;&#x8FD4;&#x56DE; UTC &#x683C;&#x5F0F;&#x7684;&#x65F6;&#x95F4;&#xFF0C;IOS8601 &#x683C;&#x5F0F;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
-<pre><code class="lang-js"><span class="hljs-string">&quot;finished_at&quot;</span>: <span class="hljs-string">&quot;2012-01-01T12:00:00Z&quot;</span>
+<pre><code class="lang-js">{
+    <span class="hljs-string">&quot;finished_at&quot;</span>: <span class="hljs-string">&quot;2012-01-01T12:00:00Z&quot;</span>
+}
 </code></pre>
 
                                 
@@ -377,7 +379,7 @@ axios({
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"前后端交互规范","level":"1.1","depth":1,"next":{"title":"范例","level":"1.2","depth":1,"path":"fan-li.md","ref":"fan-li.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-12-03T09:09:23.351Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-04T08:38:17.365Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"前后端交互规范","level":"1.1","depth":1,"next":{"title":"范例","level":"1.2","depth":1,"path":"fan-li.md","ref":"fan-li.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2017-12-07T03:28:13.901Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-07T03:29:54.019Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
